@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Yellow )
+find_package( OpenCV REQUIRED )
+add_executable( Yellow yellow.cpp )
+target_link_libraries( Yellow ${OpenCV_LIBS} )
